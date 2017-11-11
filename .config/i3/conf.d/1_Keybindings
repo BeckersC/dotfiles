@@ -139,8 +139,8 @@ bindsym XF86AudioPrev exec playerctl previous
 # kill focused window
 bindsym $mod1+q kill
 
-#Lockscreen
-bindsym $mod1+x exec ~/.config/i3/scripts/lockm.sh
+#Lockscreen i3lock
+bindsym $mod1+x exec ~/.config/i3/scripts/i3lock.sh
 
 #Launch Rofi
 bindsym $mod1+d exec rofi -show run -lines 6 -eh 2 -fullscreen -width 100 -padding 400 -opacity "80" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "Ubuntu Mono 15"
