@@ -121,3 +121,6 @@ fi
 # ( ) # Hide shell job control messages.
 (wal -r &)
 
+set $RTV_EDITOR vim
+set $RTV_BROWSER w3m
+
