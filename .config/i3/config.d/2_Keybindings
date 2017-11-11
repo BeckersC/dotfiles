@@ -60,7 +60,7 @@ bindsym $mod1+a focus parent
 bindsym $mod1+Shift+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod1+r exec "~/.config/i3/scripts/gen.conf"; restart
+bindsym $mod1+r exec ~/.config/i3/scripts/gen.conf ; restart
 
 # exit i3 (logs you out of your X session)
 bindsym $mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
