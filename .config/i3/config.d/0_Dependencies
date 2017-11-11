@@ -1,5 +1,7 @@
 # DEPENDENCIES
 #
+# i3 or i3-gaps
+#
 # scrot
 # numlockx
 # convert
@@ -9,6 +11,7 @@
 # displaycal / argyl
 # terminology
 # diskie (pip python)
+# pywal
 
 # #Dependencies for ranger
 #
