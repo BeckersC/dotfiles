@@ -13,7 +13,7 @@ i3lock -c 666666
 DISPLAY_RE="([0-9]+)x([0-9]+)\\+([0-9]+)\\+([0-9]+)"
 IMAGE_RE="([0-9]+)x([0-9]+)"
 FOLDER=`dirname "$BASH_SOURCE"`
-LOCK=/home/create4life/.config/i3/scripts/icons/lock_small.png
+LOCK=~/.config/i3/scripts/icons/lock_small.png
 PARAMS=""
 OUTPUT_IMAGE="/tmp/i3lock.png"
 
