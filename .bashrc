@@ -115,3 +115,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Import colorscheme from 'wal'
+# &   # Run the process in the background.
+# ( ) # Hide shell job control messages.
+(wal -r &)
+
