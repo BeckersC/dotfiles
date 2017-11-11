@@ -6,8 +6,8 @@ set $mod2 Mod4
 floating_modifier $mod1
 
 # start a terminal
-#bindsym $mod1+Return exec i3-sensible-terminal
-bindsym $mod1+Return exec terminology
+bindsym $mod1+Return exec i3-sensible-terminal
+#bindsym $mod1+Return exec terminology
 
 # change focus
 bindsym $mod1+j focus left
@@ -127,4 +127,7 @@ exec_always --no-startup-id numlockx on
 exec_always --no-startup-id VISUAL=editor; export VISUAL EDITOR=editor; export EDITOR
 
 # Background image
-exec_always --no-startup-id feh --bg-fill -s ~/Pictures/Wallpaper/wallpaper.jpg
+#exec_always --no-startup-id feh --bg-fill -s ~/Pictures/Wallpaper/wallpaper.jpg
+
+# Pywall restore theme
+exec --no-startup-id wal -R
