@@ -3,7 +3,8 @@ set $screen1 "LVDS-1"
 set $screen2 "HDMI-1"
 
 #Xrandr setup
-#xrandr --output $screen1 --primary --left-of HDMI-1
+# xrandr --output $screen1 --primary 
+
 
 # Define workspace name right
 set $workspace1 "1: Work1"
