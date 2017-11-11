@@ -282,7 +282,7 @@ bar {
 bindsym $mod1+q kill
 
 #Lockscreen
-bindsym $mod1+x exec /home/create4life/.config/i3/scripts/lockm.sh
+bindsym $mod1+x exec ~/.config/i3/scripts/lockm.sh
 
 #Launch Rofi
 

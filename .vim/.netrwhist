@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/create4life/mayainstall/maya2017install'
+let g:netrw_dirhist_2='/home/create4life/build/opentrack/opentrack/CMakeFiles'
+let g:netrw_dirhist_3='/mnt/shared_data/Heaj/Bac2/Analyse_Media'
+let g:netrw_dirhist_4='/home/create4life/.vim/bundle/fountain.vim'
+let g:netrw_dirhist_5='/home/create4life/.vim/bundle/fountain.vim/syntax'
+let g:netrw_dirhist_6='/home/create4life/.vim/bundle/fountain.vim'
+let g:netrw_dirhist_7='/home/create4life/.vim/bundle/goyo.vim'
+let g:netrw_dirhist_8='/home/create4life/.vim/bundle/goyo.vim/autoload'
