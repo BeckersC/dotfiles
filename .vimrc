@@ -26,14 +26,17 @@ Bundle "SuperTab"
 Bundle "file-line"
 Bundle "Align"
 Bundle "junegunn/goyo.vim"
+Bundle "dylanaraps/wal.vim"
 
 call vundle#end() "required
 
+colorscheme wal
 
 filetype plugin indent on
 syntax on
 
 set t_Co=256
+
 set laststatus=2
 
 set statusline+=%#warningmsg#
@@ -75,5 +78,14 @@ autocmd VimEnter * set number
 :inoremap ( ()<Esc>i
 :inoremap [ []<Esc>i
 :inoremap { {}<Esc>i
+
+" Add spellchecker
+    " ]s = goto next misstake
+    " ]z = suggest alternative
+    " zg = add to dictionary
+    " zw = remove from dictionary
+    "
+map <F6> :setlocal spell! spelling=en_US
+
 
 
