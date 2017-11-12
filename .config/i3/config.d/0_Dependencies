@@ -1,0 +1,19 @@
+# DEPENDENCIES
+#
+# i3 or i3-gaps
+#
+# scrot
+# numlockx
+# convert
+# compton
+# rofi
+# i3block
+# displaycal / argyl
+# urxvt
+# diskie (pip python)
+# pywal
+
+# #Dependencies for ranger
+#
+#w3m w3m-img
+#
