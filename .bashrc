@@ -123,4 +123,5 @@ fi
 
 set $RTV_EDITOR vim
 set $RTV_BROWSER w3m
+set $RANGER_LOAD_DEFAULT_RC false 
 
