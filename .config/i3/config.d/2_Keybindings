@@ -6,8 +6,9 @@ set $mod2 Mod4
 floating_modifier $mod1
 
 # start a terminal
-bindsym $mod1+Return exec i3-sensible-terminal
+#bindsym $mod1+Return exec i3-sensible-terminal
 #bindsym $mod1+Return exec terminology
+bindsym $mod1+Return exec urxvt
 
 # change focus
 bindsym $mod1+j focus left
@@ -115,8 +116,6 @@ exec_always xmodmap -e "keysym Caps_Lock = Escape" #set caps_lock as escape
 # Daemons
 exec --no-startup-id udiskie #automount
 
-# Compositor
-exec --no-startup-id compton -f
 
 # Numlock
 exec_always --no-startup-id numlockx on 
