@@ -1,10 +1,10 @@
 # Screen Variables
-set $screen1 "LVDS-1"
-set $screen2 "HDMI-1"
+set $screen1 "HDMI-A-4"
+set $screen2 "DVI-D-0"
 
 #Xrandr setup
 # xrandr --output $screen1 --primary 
-
+exec_always --no-startup-id bash ~/.screenlayout/screenlayout.sh
 
 # Define workspace name right
 set $workspace1 "1: Work1"
