@@ -4,7 +4,6 @@ Xft*rgba: rgb
 Xft*hinting: true
 Xft*hintstyle: hintslight
 
-!Bit depth
 URxvt*depth: 24
 !false transparency
 URxvt*transparent:false
