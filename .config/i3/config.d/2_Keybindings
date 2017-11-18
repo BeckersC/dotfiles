@@ -57,11 +57,8 @@ bindsym $mod1+space focus mode_toggle
 # focus the parent container
 bindsym $mod1+a focus parent
 
-# reload the configuration file
-bindsym $mod1+Shift+c reload
-
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod1+r exec ~/.config/i3/scripts/gen.conf ; restart
+bindsym $mod1+Shift+r exec ~/.config/i3/scripts/gen.conf.sh ; restart
 
 # exit i3 (logs you out of your X session)
 bindsym $mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
@@ -94,6 +91,17 @@ mode "resize" {
 #resizemode
 bindsym $mod2+r mode "resize"
 
+# Quick start
+
+bindsym $mod1+r exec urxvt -e ranger
+bindsym $mod1+m exec urxvt -e ncmpcpp
+bindsym $mod1+t exec mpc toggle
+bindsym $mod1+n exec mpc next
+bindsym $mod1+p exec mpc prev
+bindsym $mod1+b exec mpc seek 0%
+
+
+
 #Keybindings
 # Media Keys
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute  
@@ -116,6 +124,8 @@ exec_always xmodmap -e "keysym Caps_Lock = Escape" #set caps_lock as escape
 # Daemons
 exec --no-startup-id udiskie #automount
 
+# Launch Rofi
+bindsym $mod1+d exec rofi -show run -lines 6 -eh 2 -fullscreen -width 100 -padding 400 -opacity "80" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "Ubuntu Mono 15"
 
 # Numlock
 exec_always --no-startup-id numlockx on 
