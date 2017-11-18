@@ -54,4 +54,4 @@ killall i3lock
 i3lock -u -i  $OUTPUT_IMAGE
 
 #Remove the generated image:
-#rm $OUTPUT_IMAGE
+rm $OUTPUT_IMAGE
