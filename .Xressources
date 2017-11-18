@@ -12,4 +12,26 @@ URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
 
 
+!Clipboard settings
+!Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+!Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <ESC>"+pa
+
+
+
+
+)
+
+ Font config
+Xft.dpi: 96
+Xft.autohint:0 Xft.lcdfilter: lcddefault 
+Xft.hinstyle: hintslight
+Xft.hinting: 1
+Xft.anitalias: 1
+Xft.rgba: rgb
+
 
