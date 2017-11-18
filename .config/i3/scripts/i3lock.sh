@@ -8,17 +8,18 @@
 
 BLURTYPE="0x5"
 
-i3lock -c 666666 
 
 DISPLAY_RE="([0-9]+)x([0-9]+)\\+([0-9]+)\\+([0-9]+)"
 IMAGE_RE="([0-9]+)x([0-9]+)"
-FOLDER=`dirname "$BASH_SOURCE"`
 LOCK=~/.config/i3/scripts/icons/lock_small.png
 PARAMS=""
 OUTPUT_IMAGE="/tmp/i3lock.png"
 
 #Take screenshot:
+
 scrot -z $OUTPUT_IMAGE
+
+i3lock -c 666666 
 
 #Get dimensions of the lock image:
 LOCK_IMAGE_INFO=`identify $LOCK`
@@ -44,7 +45,7 @@ do
 done <<<"`xrandr`"
 
 #Execute ImageMagick:
-PARAMS="'$OUTPUT_IMAGE' '-level' '0%,200%,0.75' '-blur' '$BLURTYPE' $PARAMS '$OUTPUT_IMAGE'"
+PARAMS="'$OUTPUT_IMAGE' '-level' '0%,150%,0.85' '-blur' '$BLURTYPE' $PARAMS '$OUTPUT_IMAGE'"
 eval convert $PARAMS
 
 #Lock the screen:
@@ -53,4 +54,4 @@ killall i3lock
 i3lock -u -i  $OUTPUT_IMAGE
 
 #Remove the generated image:
-rm $OUTPUT_IMAGE
+#rm $OUTPUT_IMAGE
