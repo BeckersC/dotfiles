@@ -79,10 +79,10 @@ vmap <C-v> <ESC>"+pa
 
 "Makros
 "Navigating with guides
-inoremap <Space><Tab> <Esc>/<++><Enter>"_c4l
-vnoremap <Space><Tab> <Esc>/<++><Enter>"_c4l
-map <Space><Tab> <Esc>/<++><Enter>"_c4l
-inoremap ;gui <++>
+"inoremap <Space><Tab> <Esc>/<++><Enter>"_c4l
+"vnoremap <Space><Tab> <Esc>/<++><Enter>"_c4l
+"map <Space><Tab> <Esc>/<++><Enter>"_c4l
+"inoremap ;gui <++>
 
 """LATEX
 "Help with file type recognition
