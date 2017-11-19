@@ -31,16 +31,57 @@ Bundle "Align"
 Bundle "junegunn/goyo.vim"
 Bundle "dylanaraps/wal.vim"
 
+"Color
+Bundle 'nanotech/jellybeans.vim'
+Bundle 'gmarik/ingretu'
+Bundle 'Dru89/vim-adventurous'
+Bundle 'morhetz/gruvbox'
+
+"END VUUNDLE
 call vundle#end() "required
 
-colorscheme wal
+"-----------------------------
+
+
 
 filetype plugin indent on
 syntax on
 set encoding=utf-8
+set hlsearch
+
+" Damian Conway's Die Blinkënmatchen: highlight matches
+nnoremap <silent> n n:call HLNext(0.1)<cr>
+nnoremap <silent> N N:call HLNext(0.1)<cr>
+
+function! HLNext (blinktime)
+  let target_pat = '\c\%#'.@/
+  let ring = matchadd('ErrorMsg', target_pat, 101)
+  redraw
+  exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
+  call matchdelete(ring)
+  redraw
+endfunction
+
+"Gruvbox
+colorscheme gruvbox
+
+set background=dark
+
+
+"set gruvbox_bold
+"set gruvbox_italic
+"set gruvbox_underline
+"set gruvbox_undercurl
+"set gruvbox_termcolors
+"set gruvbox_contrast_dark
+"
+
+
+
+
 
 set t_Co=256
-
+"colorscheme wal
 set laststatus=2
 
 set statusline+=%#warningmsg#
