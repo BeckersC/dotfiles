@@ -97,22 +97,27 @@ label-indicator-underline = ${colors.secondary}
 [module/filesystem]
 type = internal/fs
 interval = 25
-
 mount-0 = /
-
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground-alt}
+
+[module/Data]
+type = internal/fs
+interval = 25
+mount-0 = /mnt/shared_data
+label-mounted = ${F#228484}~${F-}: %percentage_used%%
+label-unmounted = $mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
 [module/home]
 type = internal/fs
 interval = 25
-
 mount-0 = /home
-
 label-mounted = %{F#0a81f5}~%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
+
 [module/bspwm]
 type = internal/bspwm
 
