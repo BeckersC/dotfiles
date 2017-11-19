@@ -63,6 +63,8 @@ bindsym $mod1+Shift+r exec ~/.config/i3/scripts/gen.conf.sh ; restart
 # exit i3 (logs you out of your X session)
 bindsym $mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+# Launch Rofi
+bindsym $mod1+d exec rofi -show run -lines 6 -eh 2 -fullscreen -width 100 -padding 400 -opacity "80" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "Ubuntu Mono 15"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -124,8 +126,6 @@ exec_always xmodmap -e "keysym Caps_Lock = Escape" #set caps_lock as escape
 # Daemons
 exec --no-startup-id udiskie #automount
 
-# Launch Rofi
-bindsym $mod1+d exec rofi -show run -lines 6 -eh 2 -fullscreen -width 100 -padding 400 -opacity "80" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "Ubuntu Mono 15"
 
 # Numlock
 exec_always --no-startup-id numlockx on 
