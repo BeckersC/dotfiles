@@ -2,11 +2,21 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+#SERVICES
 alias newnet="sudo systemctl restart NetworkManager"
-alias vrc="vim .vimrc"
+
+#EDITING
+alias vrc="vim ~/.vimrc"
+alias brc="vim ~/.bashrc"
+
+#MOVEMENT
+alias mkdir="mkdir -pv"
+alias ls="ls -hN --color=auto --group-directory-first"
+alias cdi3="cd ~/.config/i3/"
+alias cdr="cd ~/.config/ranger"
 
 
-
+#MPD
 alias music="ncmpcpp"
 alias clock="ncmpcpp -s clock"
 alias visualizer="ncmpcpp -s visualizer"
@@ -14,9 +24,7 @@ alias files="ranger"
 alias mixer="pavucontrol"
 alias calendar="calcurse"
 
-alias ls="ls -hN --color=auto --group-directory-first"
 alias gitup="git push origin master"
-alias mkdir="mkdir -pv"
 alias starwars="telnet towel.blinkenlights.nl"
 
 alias pause="mpc toggle"
@@ -24,6 +32,12 @@ alias next="mpc next"
 alias prev="mpc prev"
 alias trupause="mpv pause"
 alias beg="mpc seek 0%"
+
+#GITHUB
+alias ga="git add -f "
+alias gcm="git commit -m"
+alias gpm="git push origin master"
+
 
 # If not running interactively, don't do anything
 case $- in
