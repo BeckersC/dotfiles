@@ -71,10 +71,10 @@ autocmd VimEnter * set number
 
 "Selection
 "set clipboard=unnamed
-vmap <C-c> "+yi
-vmap <C-x> "+c
-vmap <C-v> c<ESC>"+p
-vmap <C-v> <ESC>"+pa
+vmap <C-c> "+y<ESC>
+vmap <C-x> "+c<ESC>
+vmap <C-v> c<ESC>"+p<ESC>
+vmap <C-v> <ESC>"+pa<ESC>
 
 
 "Makros
