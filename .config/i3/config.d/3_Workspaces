@@ -14,19 +14,23 @@ exec --no-startup-id wal -R
 
 # Bars
 
-bar {
-        status_command  i3blocks -c /home/create4life/.config/i3/i3blocks.conf
-        position top
-        workspace_buttons no
-        colors {
-                background $bg-color
-                separator #757575
-                #                   border             background           text
-                focused_workspace   $urgent-bg-color   $bg-color            $text-color    
-                inactive_workspace  $inavtive-bg-color $inactive-bg-color   $inactive-text-color 
-                urgent_workspace    $urgent-bg-color   $urgent-bg-color     $text-color 
-         }
-}
+#bar {
+#        status_command  i3blocks -c /home/create4life/.config/i3/i3blocks.conf
+#        position top
+#        workspace_buttons no
+#        colors {
+#                background $bg-color
+#                separator #757575
+#                #                   border             background           text
+#                focused_workspace   $urgent-bg-color   $bg-color            $text-color    
+#                inactive_workspace  $inavtive-bg-color $inactive-bg-color   $inactive-text-color 
+#                urgent_workspace    $urgent-bg-color   $urgent-bg-color     $text-color 
+#         }
+#}
+
+#polybar
+#
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 
 bar {
