@@ -9,9 +9,10 @@
 # rofi
 # i3block
 # displaycal / argyl
-# urxvt
+# rxvt-unicode-256colors
 # diskie (pip python)
 # pywal
+# polybar
 
 # #Dependencies for ranger
 #
