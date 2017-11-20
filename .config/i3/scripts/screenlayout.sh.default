@@ -18,5 +18,5 @@ for output in $(xrandr | grep '\Wconnected' | awk '{ print $1 }'); do
     fi
 done
 
-
-xrandr --output $left --primary --auto --pos 0x0 --rotate normal --output $right --right-of $left --rotate normal 
+echo xrandr --output $left --primary --auto --pos 0x0 --rotate $orientation --output $right --auto --right-of $left --rotate normal 
+xrandr --output $left --primary --auto --pos 0x0 --rotate normal --output $right --auto --right-of $left --rotate normal 
