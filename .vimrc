@@ -16,6 +16,8 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugins
 Plugin 'https://github.com/vim-scripts/fountain.vim'
 Plugin 'junegunn/vim-easy-align'
+Plugin 'xuhdev/vim-latex-live-preview'
+let g:livepreview_previwer = 'mupdf'
 
 "Syntax highlight
 Bundle "Markdown"
