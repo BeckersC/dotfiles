@@ -16,8 +16,10 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugins
 Plugin 'https://github.com/vim-scripts/fountain.vim'
 Plugin 'junegunn/vim-easy-align'
-Plugin 'xuhdev/vim-latex-live-preview'
-let g:livepreview_previwer = 'mupdf'
+Plugin 'lervag/vimtex'
+"Plugin 'xuhdev/vim-latex-live-preview'
+"let g:livepreview_previewer = 'mupdf'
+"Plugin 'ying17zi/vim-live-latex-preview'
 
 "Syntax highlight
 Bundle "Markdown"
@@ -130,8 +132,10 @@ vmap <C-v> <ESC>"+pa<ESC>
 "Help with file type recognition
 autocmd BufRead,BufNewFile *.tex set filetype=tex
 
-autocmd FileType tex inoremap <F5> <Esc>:!xelatex<spacE><c-r>%<Enter>i
-autocmd FileType tex nnoremap <F5> :!xelatex<spacE><c-r>%<Enter>
+"autocmd FileType tex inoremap <F5> <Esc>:!xelatex<spacE><c-r>%<Enter>i
+"autocmd FileType tex nnoremap <F5> :!xelatex<spacE><c-r>%<Enter>
+autocmd FileType tex inoremap <F5> <esc>:LLPStartPreview<space><Enter>
+autocmd FileType tex nnoremap <F5> <esc>:LLPStartPreview<space><Enter>
 autocmd FileType tex inoremap ;fr \begin{frame}<Enter>\frametitle{}<Enter><Enter><++><Enter><Enter>\end{frame}<Enter><Enter><++><Esc>6kf}i
 autocmd FileType tex inoremap ;fit \begin{fitch}<Enter><Enter>\end{fitch}<Enter><Enter><++><Esc>3kA
 autocmd FileType tex inoremap ;fig \begin{figure}<Enter><Enter>\end{figure}<Enter><Enter><++><Esc>3kA

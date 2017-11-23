@@ -14,6 +14,7 @@ alias mkdir="mkdir -pv"
 alias ls="ls -hN --color=auto --group-directory-first"
 alias cdi3="cd ~/.config/i3/"
 alias cdr="cd ~/.config/ranger"
+alias r="ranger"
 
 
 #MPD
