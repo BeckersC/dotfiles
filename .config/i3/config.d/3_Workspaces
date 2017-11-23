@@ -6,10 +6,10 @@ set $screen2 "DVI-D-0"
 #Xrandr setup
 # xrandr --output $screen1 --primary 
 #exec --no-startup-id bash ~/.screenlayout/screenlayout2.sh
-exec_always --no-startup-id bash ~/.config/i3/scripts/screenlayout.sh
+exec --no-startup-id bash ~/.config/i3/scripts/screenlayout.sh
 
 # Pywall restore theme
-exec --no-startup-id wal -R
+exec --no-startup-id bash wal -R
 
 # Bars
 
@@ -46,10 +46,10 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 # Define workspace name right
 set $workspace1 "1: Work1"
 set $workspace2 "2: Work2"
-set $workspace3 "3: Internet"
-set $workspace4 "4: Chat"
-set $workspace5 "5: Music"
-set $workspace6 "6: Workspace7"
+set $workspace3 "3: Work3"
+set $workspace4 "4: Internet"
+set $workspace5 "5: Chat"
+set $workspace6 "6: Music"
 set $workspace7 "7: Workspace8"
 set $workspace8 "8: Workspace9"
 set $workspace9 "9: Workspace10"
@@ -106,10 +106,10 @@ workspace $workspaceB output $screen2
 workspace $workspaceC output $screen2
 
 #Default workspace for Applications
-assign [class="discord"] $workspace4
+assign [class="discord"] $workspace5
 assign [class="Krita"] $workspace2
-assign [class="Vivaldi-stable"] $workspace3
-assign [class="Firefox"] $workspace3
+assign [class="Vivaldi-stable"] $workspace5
+assign [class="Firefox"] $workspace4
 
 # Autostart
 
