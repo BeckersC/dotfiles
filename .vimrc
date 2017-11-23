@@ -16,7 +16,6 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugins
 Plugin 'https://github.com/vim-scripts/fountain.vim'
 Plugin 'junegunn/vim-easy-align'
-Plugin 'vim-latex/vim-latex'
 
 "Syntax highlight
 Bundle "Markdown"
