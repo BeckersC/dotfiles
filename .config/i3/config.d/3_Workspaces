@@ -32,16 +32,16 @@ exec --no-startup-id bash wal -R
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 
-#bar {
-#    position bottom
-#    workspace_buttons yes
-#    colors {
-#                background $bg-color
-#                focused_workspace   $urgent-bg-color   $urgent-bg-color     $text-color    
-#                inactive_workspace  $inavtive-bg-color $inactive-bg-color   $inactive-text-color 
-#                urgent_workspace    $blue              $blue            $text-color 
-#            }
-#}
+bar {
+    position bottom
+    workspace_buttons yes
+    colors {
+                background $bg-color
+                focused_workspace   $urgent-bg-color   $urgent-bg-color     $text-color    
+                inactive_workspace  $inavtive-bg-color $inactive-bg-color   $inactive-text-color 
+                urgent_workspace    $blue              $blue                $text-color 
+            }
+}
 
 # Define workspace name right
 set $workspace1 "1: Work1"
