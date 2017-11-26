@@ -2,7 +2,6 @@
 "Vim with +clipbard +xterm-clip compiled. For example vim-gnome; vim-gtk...
 
 "Vundle
-
 set nocompatible
 filetype off
 
@@ -123,13 +122,16 @@ vmap <C-x> "+c<ESC>
 vmap <C-v> c<ESC>"+p<ESC>
 vmap <C-v> <ESC>"+pa<ESC>
 
-
 "Makros
 "Navigating with guides
 "inoremap <Space><Tab> <Esc>/<++><Enter>"_c4l
-"vnoremap <Space><Tab> <Esc>/<++><Enter>"_c4l
-"map <Space><Tab> <Esc>/<++><Enter>"_c4l
-"inoremap ;gui <++>
+vnoremap <Space><Tab> <Esc>/<++><Enter>"_c4l
+map <Space><Tab> <Esc>/<++><Enter>"_c4l
+inoremap ;gui <++>
+
+"Controls
+"noremap Q :quit<CR>
+:command! -bar -bang Q quit<bang>
 
 """LATEX
 "Help with file type recognition

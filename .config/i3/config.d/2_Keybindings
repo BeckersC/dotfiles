@@ -95,14 +95,13 @@ bindsym $mod2+r mode "resize"
 
 # Quick start
 
+bindsym $mod1+c exec urxvt -e calcurse
 bindsym $mod1+r exec urxvt -e ranger
 bindsym $mod1+m exec urxvt -e ncmpcpp
 bindsym $mod1+t exec mpc toggle
 bindsym $mod1+n exec mpc next
 bindsym $mod1+p exec mpc prev
 bindsym $mod1+b exec mpc seek 0%
-
-
 
 #Keybindings
 # Media Keys
@@ -119,24 +118,3 @@ bindsym $mod1+q kill
 #Lockscreen i3lock
 bindsym $mod1+x exec ~/.config/i3/scripts/i3lock.sh
 
-# Keys
-exec_always xmodmap -e "clear lock" #disable caps lock switch
-exec_always xmodmap -e "keysym Caps_Lock = Escape" #set caps_lock as escape
-
-# Daemons
-exec --no-startup-id udiskie #automount
-
-
-# Numlock
-exec_always --no-startup-id numlockx on 
-
-# Color Management
-
-# Env Variables
-exec_always --no-startup-id VISUAL=editor; export VISUAL EDITOR=editor; export EDITOR
-
-# Background image
-#exec_always --no-startup-id feh --bg-fill -s ~/Pictures/Wallpaper/wallpaper.jpg
-
-# Pywall restore theme
-exec --no-startup-id wal -R
