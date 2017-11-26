@@ -8,11 +8,14 @@ alias newnet="sudo systemctl restart NetworkManager"
 #EDITING
 alias vrc="vim ~/.vimrc"
 alias brc="vim ~/.bashrc"
+alias vim="vim --servername VIM"
 
 #MOVEMENT
 alias mkdir="mkdir -pv"
 alias ls="ls -hN --color=auto --group-directory-first"
 alias cdi3="cd ~/.config/i3/"
+alias cdi3c="cd ~/.config/i3/config.d"
+alias cdi3s="cd ~/.config/i3/scripts"
 alias cdr="cd ~/.config/ranger"
 alias r="ranger"
 
@@ -159,7 +162,8 @@ fi
 # ( ) # Hide shell job control messages.
 (wal -r &)
 
-set $RTV_EDITOR vim
+set $EDITOR vim --servername VIM
+set $RTV_EDITOR vim --servername VIM 
 set $RTV_BROWSER w3m
 set $RANGER_LOAD_DEFAULT_RC false 
 
