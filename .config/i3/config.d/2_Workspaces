@@ -1,0 +1,130 @@
+#Xrandr setup
+# xrandr --output $screen1 --primary 
+#exec --no-startup-id bash ~/.screenlayout/screenlayout2.sh
+exec --no-startup-id bash ~/.config/i3/scripts/screenlayout.sh
+
+# Pywall restore theme
+exec_always --no-startup-id wal -R
+
+# Bars
+
+#bar {
+#        status_command  i3blocks -c /home/create4life/.config/i3/i3blocks.conf
+#        position top
+#        workspace_buttons no
+#        colors {
+#                background $bg-color
+#                separator #757575
+#                #                   border             background           text
+#                focused_workspace   $urgent-bg-color   $bg-color            $text-color    
+#                inactive_workspace  $inavtive-bg-color $inactive-bg-color   $inactive-text-color 
+#                urgent_workspace    $urgent-bg-color   $urgent-bg-color     $text-color 
+#         }
+#}
+
+#polybar
+#
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+
+bar {
+    position bottom
+    workspace_buttons yes
+    colors {
+                background $bg-color
+                focused_workspace   $urgent-bg-color   $urgent-bg-color     $text-color    
+                inactive_workspace  $inavtive-bg-color $inactive-bg-color   $inactive-text-color 
+                urgent_workspace    $blue              $blue                $text-color 
+            }
+}
+
+# Define workspace name right
+set $workspace1 "1: Work1"
+set $workspace2 "2: Work2"
+set $workspace3 "3: Work3"
+set $workspace4 "4: Internet"
+set $workspace5 "5: Chat"
+set $workspace6 "6: Music"
+set $workspace7 "7: Workspace8"
+set $workspace8 "8: Workspace9"
+set $workspace9 "9: Workspace10"
+
+set $workspaceA "A: Work1"
+set $workspaceB "B: Work2"
+set $workspaceC "C: Work3"
+
+# switch to workspace
+bindsym $mod1+1 workspace $workspace1
+bindsym $mod1+2 workspace $workspace2
+bindsym $mod1+3 workspace $workspace3
+bindsym $mod1+4 workspace $workspace4
+bindsym $mod1+5 workspace $workspace5
+bindsym $mod1+6 workspace $workspace6
+bindsym $mod1+7 workspace $workspace7
+bindsym $mod1+8 workspace $workspace8
+bindsym $mod1+9 workspace $workspace9
+bindsym $mod1+0 workspace $workspacex
+
+bindsym $mod2+1 workspace $workspaceA
+bindsym $mod2+2 workspace $workspaceB
+bindsym $mod2+3 workspace $workspaceC
+
+# move focused container to workspace
+bindsym $mod1+Shift+1 move container to workspace $workspace1
+bindsym $mod1+Shift+2 move container to workspace $workspace2
+bindsym $mod1+Shift+3 move container to workspace $workspace3
+bindsym $mod1+Shift+4 move container to workspace $workspace4
+bindsym $mod1+Shift+5 move container to workspace $workspace5
+bindsym $mod1+Shift+6 move container to workspace $workspace6
+bindsym $mod1+Shift+7 move container to workspace $workspace7
+bindsym $mod1+Shift+8 move container to workspace $workspace8
+bindsym $mod1+Shift+9 move container to workspace $workspace9
+bindsym $mod1+Shift+0 move container to workspace $workspacex
+
+bindsym $mod2+Shift+1 move container to workspace $workspaceA
+bindsym $mod2+Shift+2 move container to workspace $workspaceB
+bindsym $mod2+Shift+3 move container to workspace $workspaceC
+
+# Screen Variables
+set $screen1 "HDMI-A-4"
+set $screen2 "DVI-D-0"
+
+#workspace default monitors
+workspace $workspace1 output $screen1
+workspace $workspace2 output $screen1
+workspace $workspace3 output $screen1
+workspace $workspace4 output $screen1
+workspace $workspace5 output $screen1
+workspace $workspace6 output $screen1
+workspace $workspace7 output $screen1
+workspace $workspace8 output $screen1
+workspace $workspace9 output $screen1
+workspace $workspacex output $screen1
+
+workspace $workspaceA output $screen2
+workspace $workspaceB output $screen2
+workspace $workspaceC output $screen2
+
+#Default workspace for Applications
+assign [class="discord"] $workspace5
+assign [class="Krita"] $workspace2
+assign [class="Vivaldi-stable"] $workspace5
+assign [class="Firefox"] $workspace4
+
+# Autostart
+exec --no-startup-id discord
+exec --no-startup-id firefox
+exec --no-startup-id mpd
+
+# Daemon
+exec --no-startup-id calcurse --daemon
+
+# Numlock
+exec_always --no-startup-id numlockx on 
+
+# Env Variables
+exec_always --no-startup-id VISUAL=editor; export VISUAL EDITOR=editor; export EDITOR
+exec_always --no-startup-id 
+
+# Pywall restore theme
+exec --no-startup-id wal -R

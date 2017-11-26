@@ -1,0 +1,120 @@
+#Choose modifier keys
+set $mod1 Mod1
+set $mod2 Mod4
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod1
+
+# start a terminal
+#bindsym $mod1+Return exec i3-sensible-terminal
+#bindsym $mod1+Return exec terminology
+bindsym $mod1+Return exec urxvt
+
+# change focus
+bindsym $mod1+j focus left
+bindsym $mod1+k focus down
+bindsym $mod1+l focus up
+bindsym $mod1+odiaeresis focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod1+Left focus left
+bindsym $mod1+Down focus down
+bindsym $mod1+Up focus up
+bindsym $mod1+Right focus right
+
+# move focused window
+bindsym $mod1+Shift+j move left
+bindsym $mod1+Shift+k move down
+bindsym $mod1+Shift+l move up
+bindsym $mod1+Shift+odiaeresis move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod1+Shift+Left move left
+bindsym $mod1+Shift+Down move down
+bindsym $mod1+Shift+Up move up
+bindsym $mod1+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod1+h split h
+
+# split in vertical orientation
+bindsym $mod1+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod1+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod1+s layout stacking
+bindsym $mod1+w layout tabbed
+bindsym $mod1+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod1+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod1+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod1+a focus parent
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod1+Shift+r exec ~/.config/i3/scripts/gen.conf.sh ; restart
+
+# exit i3 (logs you out of your X session)
+bindsym $mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# Launch Rofi
+bindsym $mod1+d exec rofi -show run -lines 6 -eh 2 -fullscreen -width 100 -padding 400 -opacity "80" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "Ubuntu Mono 15"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym odiaeresis resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+#resizemode
+bindsym $mod2+r mode "resize"
+
+# Quick start
+
+bindsym $mod1+c exec urxvt -e calcurse
+bindsym $mod1+r exec urxvt -e ranger
+bindsym $mod1+m exec urxvt -e ncmpcpp
+bindsym $mod1+t exec mpc toggle
+bindsym $mod1+n exec mpc next
+bindsym $mod1+p exec mpc prev
+bindsym $mod1+b exec mpc seek 0%
+
+#Keybindings
+# Media Keys
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute  
+bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute  
+bindsym XF86AudioMute exec amixer -q set Master mute  
+bindsym XF86AudioPlay exec playerctl play-pause  
+bindsym XF86AudioNext exec playerctl next  
+bindsym XF86AudioPrev exec playerctl previous  
+
+# kill focused window
+bindsym $mod1+q kill
+
+#Lockscreen i3lock
+bindsym $mod1+x exec ~/.config/i3/scripts/i3lock.sh
+
