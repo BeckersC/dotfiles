@@ -85,10 +85,6 @@ bindsym $mod2+Shift+1 move container to workspace $workspaceA
 bindsym $mod2+Shift+2 move container to workspace $workspaceB
 bindsym $mod2+Shift+3 move container to workspace $workspaceC
 
-# Screen Variables
-set $screen1 "HDMI-A-4"
-set $screen2 "DVI-D-0"
-
 #workspace default monitors
 workspace $workspace1 output $screen1
 workspace $workspace2 output $screen1
