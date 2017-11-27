@@ -119,9 +119,5 @@ exec --no-startup-id udiskie
 # Numlock
 exec_always --no-startup-id numlockx on 
 
-# Env Variables
-exec_always --no-startup-id VISUAL=editor; export VISUAL EDITOR=editor; export EDITOR
-exec_always --no-startup-id 
-
 # Pywall restore theme
 exec --no-startup-id wal -R
