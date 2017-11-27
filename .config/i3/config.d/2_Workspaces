@@ -114,6 +114,7 @@ exec --no-startup-id mpd
 
 # Daemon
 exec --no-startup-id calcurse --daemon
+exec --no-startup-id udiskie
 
 # Numlock
 exec_always --no-startup-id numlockx on 
