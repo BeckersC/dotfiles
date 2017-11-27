@@ -11,7 +11,7 @@ BLURTYPE="0x5"
 
 DISPLAY_RE="([0-9]+)x([0-9]+)\\+([0-9]+)\\+([0-9]+)"
 IMAGE_RE="([0-9]+)x([0-9]+)"
-LOCK=~/.config/i3/scripts/icons/lock_small.png
+LOCK=~/.config/i3/scripts/icons/lock_tiny.png
 PARAMS=""
 OUTPUT_IMAGE="/tmp/i3lock.png"
 
