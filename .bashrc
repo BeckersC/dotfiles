@@ -157,11 +157,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Import colorscheme from 'wal'
-# &   # Run the process in the background.
-# ( ) # Hide shell job control messages.
-(wal -r &)
-
 set $EDITOR vim --servername VIM
 set $RTV_EDITOR vim --servername VIM 
 set $RTV_BROWSER w3m
