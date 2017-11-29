@@ -44,7 +44,7 @@ bindsym $mod1+v split v
 bindsym $mod1+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod1+s layout stacking
+#bindsym $mod1+s layout stacking
 bindsym $mod1+w layout tabbed
 bindsym $mod1+e layout toggle split
 
@@ -92,6 +92,12 @@ mode "resize" {
 
 #resizemode
 bindsym $mod2+r mode "resize"
+
+#Screenshot
+bindsym --release $mod1+s exec "scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mv $f ~/printscreens/'" 
+bindsym --release Print exec "scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mv $f ~/printscreens/'"
+
+#$mod1+s exec ~/.config/i3/scripts/screenshot.sh
 
 # Quick start
 
