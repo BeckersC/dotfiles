@@ -125,8 +125,8 @@ vmap <C-v> <ESC>"+pa<ESC>
 "Makros
 "Navigating with guides
 "inoremap <Space><Tab> <Esc>/<++><Enter>"_c4l
-vnoremap <Space><Tab> <Esc>/<++><Enter>"_c4l
-map <Space><Tab> <Esc>/<++><Enter>"_c4l
+vnoremap <Space><Space> <Esc>/<++><Enter>"_c4l
+map <Space><Space> <Esc>/<++><Enter>"_c4l
 inoremap ;gui <++>
 
 "Controls
