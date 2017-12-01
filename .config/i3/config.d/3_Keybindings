@@ -101,6 +101,7 @@ bindsym --release Print exec "scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mv $f ~/p
 
 # Quick start
 
+bindsym $mod1+y exec urxvt -e htop
 bindsym $mod1+c exec urxvt -e calcurse
 bindsym $mod1+r exec urxvt -e ranger
 bindsym $mod1+m exec urxvt -e ncmpcpp

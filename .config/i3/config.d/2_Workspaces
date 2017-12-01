@@ -1,10 +1,5 @@
 #Xrandr setup
-# xrandr --output $screen1 --primary 
-#exec --no-startup-id bash ~/.screenlayout/screenlayout2.sh
 exec --no-startup-id bash ~/.config/i3/scripts/screenlayout.sh
-
-# Pywall restore theme
-exec_always --no-startup-id wal -R
 
 # Bars
 
@@ -22,21 +17,6 @@ exec_always --no-startup-id wal -R
 #         }
 #}
 
-#polybar
-#
-exec_always --no-startup-id ~/.config/polybar/launch.sh
-
-
-bar {
-    position bottom
-    workspace_buttons yes
-    colors {
-                background $bg-color
-                focused_workspace   $urgent-bg-color   $urgent-bg-color     $text-color    
-                inactive_workspace  $inavtive-bg-color $inactive-bg-color   $inactive-text-color 
-                urgent_workspace    $blue              $blue                $text-color 
-            }
-}
 
 # Define workspace name right
 set $workspace1 "1: Work1"
@@ -118,6 +98,20 @@ exec --no-startup-id udiskie
 
 # Numlock
 exec_always --no-startup-id numlockx on 
+
+#polybar
+exec --no-startup-id ~/.config/polybar/launch.sh
+
+bar {
+    position bottom
+    workspace_buttons yes
+    colors {
+                background $bg-color
+                focused_workspace   $urgent-bg-color   $urgent-bg-color     $text-color    
+                inactive_workspace  $inavtive-bg-color $inactive-bg-color   $inactive-text-color 
+                urgent_workspace    $blue              $blue                $text-color 
+            }
+}
 
 # Pywall restore theme
 exec --no-startup-id wal -R
