@@ -1,3 +1,4 @@
-# Screen Variables
-set $screen1 "LVDS-1"
-set $screen2 "HDMI-1"
+#Screen Variables
+set $screen1 DVI-D-0
+set $screen2 HDMI-A-4
+
