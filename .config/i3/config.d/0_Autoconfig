@@ -1,0 +1,2 @@
+#Xrandr
+exec --no-startup-id bash ~.config/i3/scripts/screenlayout.sh

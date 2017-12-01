@@ -1,6 +1,3 @@
-#Xrandr setup
-exec --no-startup-id bash ~/.config/i3/scripts/screenlayout.sh
-
 # Bars
 
 #bar {
