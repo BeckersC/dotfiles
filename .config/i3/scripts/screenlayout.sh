@@ -1,9 +1,10 @@
 #!/bin/bash
 
-screenleft="DVI-D*"
+screenleft="HDMI*"
 orientation="left"
 offset="400"
 
+left="LVDS-1"
 for output in $(xrandr | grep '\Wconnected'| awk '{ print $1 }'); do
     if [[ $output =~ $screenleft ]] ; then
         left=$output
@@ -11,6 +12,7 @@ for output in $(xrandr | grep '\Wconnected'| awk '{ print $1 }'); do
     fi
 done
 
+right="left"
 for output in $(xrandr | grep '\Wconnected' | awk '{ print $1 }'); do
     if [[ ! $output =~ $screenleft ]] ; then
         right=$output
