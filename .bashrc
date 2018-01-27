@@ -19,6 +19,10 @@ alias cdi3s="cd ~/.config/i3/scripts"
 alias cdr="cd ~/.config/ranger"
 alias r="ranger"
 
+#CRYPTO
+
+alias geth = "geth --syncmode "light" --cache 1024"
+
 
 #MPD
 alias music="ncmpcpp"
