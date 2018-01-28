@@ -83,7 +83,7 @@ set background=dark
 
 "SYNTASTIC
 "
-let g:syntastic_quiet_messages = { 'regex': 'E501\|E122'}
+let g:syntastic_quiet_messages = { 'regex': 'E501\|E122\|F401'}
 
 
 
