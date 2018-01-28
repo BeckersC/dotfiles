@@ -81,6 +81,9 @@ set background=dark
 "set gruvbox_contrast_dark
 "
 
+"SYNTASTIC
+"
+let g:syntastic_quiet_messages = { 'regex': 'E501\|E122'}
 
 
 
