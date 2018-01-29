@@ -4,7 +4,7 @@ screenleft="HDMI*"
 orientation="left"
 offset="400"
 
-left="LVDS-1"
+left="screenleft"
 for output in $(xrandr | grep '\Wconnected'| awk '{ print $1 }'); do
     if [[ $output =~ $screenleft ]] ; then
         left=$output
