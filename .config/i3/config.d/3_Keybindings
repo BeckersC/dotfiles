@@ -100,16 +100,23 @@ bindsym --release Print exec "scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mv $f ~/p
 
 #$mod1+s exec ~/.config/i3/scripts/screenshot.sh
 
-# Quick start
+#mod1 
 
 bindsym $mod1+y exec urxvt -e htop
-bindsym $mod1+c exec urxvt -e calcurse
 bindsym $mod1+r exec urxvt -e ranger
+bindsym $mod1+n exec nautilus
 bindsym $mod1+m exec urxvt -e ncmpcpp
-bindsym $mod1+t exec mpc toggle
-bindsym $mod1+n exec mpc next
-bindsym $mod1+p exec mpc prev
-bindsym $mod1+b exec mpc seek 0%
+
+
+#mod2
+
+bindsym $mod2+c exec urxvt -e calcurse
+bindsym $mod2+k exec gnome-calculator
+
+bindsym $mod2+t exec mpc toggle
+bindsym $mod2+n exec mpc next
+bindsym $mod2+p exec mpc prev
+bindsym $mod2+b exec mpc seek 0%
 
 #Keybindings
 # Media Keys
