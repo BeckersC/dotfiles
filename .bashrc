@@ -21,7 +21,7 @@ alias r="ranger"
 
 #CRYPTO
 
-alias geth = "geth --syncmode "light" --cache 1024"
+alias geth="geth --syncmode "light" --cache 1024"
 
 
 #MPD
