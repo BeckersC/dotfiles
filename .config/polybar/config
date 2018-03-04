@@ -54,7 +54,7 @@ font-0 = mono:pixelsize=11;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = Wuncon Siji:pixelsize=11;1
 
-modules-left =i3  mpd
+modules-left =i3 mpd crypto
 #modules-center = mpd
 modules-right = home filesystem volume wlan eth temperature battery  date powermenu
 
@@ -170,6 +170,15 @@ label-visible-padding = ${self.label-focused-padding}
 label-urgent = %index%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
+
+[module/crypto]
+type = custom/script
+exec = tail ~/Cryptocurrency/logs/current_Value
+tail = true
+interval = 60
+format-prefix = 
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = ${xrdb:color12}
 
 [module/mpd]
 type = internal/mpd

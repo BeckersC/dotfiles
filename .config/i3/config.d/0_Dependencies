@@ -8,7 +8,6 @@
 # compton
 # rofi
 # i3block
-# displaycal / argyl
 # rxvt-unicode-256colors
 # diskie (pip python)
 # pywal
@@ -16,6 +15,8 @@
 # qt4config or whatever it is called
 # qt dark theme
 # arc kde
+# xcalib
+# xdotool (vim anywhere)
 
 # #Dependencies for ranger
 #
