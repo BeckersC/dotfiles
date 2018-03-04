@@ -5,6 +5,9 @@ set $mod2 Mod4
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod1
 
+# Vim anywhere
+bindsym $mod1+o exec --no-startup-id ~/.config/i3/scripts/vim_anywhere.sh
+
 # start a terminal
 #bindsym $mod1+Return exec i3-sensible-terminal
 #bindsym $mod1+Return exec terminology

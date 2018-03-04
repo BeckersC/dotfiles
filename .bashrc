@@ -8,7 +8,6 @@ alias newnet="sudo systemctl restart NetworkManager"
 #EDITING
 alias vrc="vim ~/.vimrc"
 alias brc="vim ~/.bashrc"
-alias vim="vim --servername VIM"
 
 #MOVEMENT
 alias mkdir="mkdir -pv"
@@ -131,6 +130,7 @@ fi
 
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+export VISUAL=vim
 
 # some more ls aliases
 alias ll='ls -alF'
@@ -161,8 +161,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-set $EDITOR vim --servername VIM
-set $RTV_EDITOR vim --servername VIM 
+set $EDITOR vim 
 set $RTV_BROWSER w3m
 set $RANGER_LOAD_DEFAULT_RC false 
 
