@@ -1,9 +1,9 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
 
 #AUR
 alias bb -S="sudo bb-wrapper -S --aur"
+
 
 #SERVICES
 alias newnet="sudo systemctl restart NetworkManager"
