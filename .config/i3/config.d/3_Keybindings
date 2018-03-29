@@ -1,6 +1,6 @@
 #Choose modifier keys
-set $mod1 Mod1
-set $mod2 Mod4
+set $mod1 Mod4
+#set $mod2 Mod4
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod1
@@ -116,10 +116,10 @@ bindsym $mod1+m exec urxvt -e ncmpcpp
 bindsym $mod2+c exec urxvt -e calcurse
 bindsym $mod2+k exec gnome-calculator
 
-bindsym $mod2+t exec mpc toggle
-bindsym $mod2+n exec mpc next
-bindsym $mod2+p exec mpc prev
-bindsym $mod2+b exec mpc seek 0%
+bindsym $mod1+t exec mpc toggle
+bindsym $mod1+N exec mpc next
+bindsym $mod1+P exec mpc prev
+bindsym $mod1+0 exec mpc seek 0%
 
 #Keybindings
 # Media Keys
