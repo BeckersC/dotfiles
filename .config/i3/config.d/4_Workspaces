@@ -15,20 +15,20 @@
 #}
 
 
-# Define workspace name right
-set $workspace1 "1: Work1"
-set $workspace2 "2: Work2"
-set $workspace3 "3: Work3"
-set $workspace4 "4: Internet"
-set $workspace5 "5: Chat"
-set $workspace6 "6: Music"
-set $workspace7 "7: Workspace8"
-set $workspace8 "8: Workspace9"
-set $workspace9 "9: Workspace10"
+# Define workspaces
+set $workspace1 "1:A"
+set $workspace2 "2:A"
+set $workspace3 "3:A"
+set $workspace4 "4:A"
+set $workspace5 "5:A"
+set $workspace6 "6:A"
+set $workspace7 "7:A"
+set $workspace8 "8:A"
+set $workspace9 "9:A"
 
-set $workspaceA "A: Work1"
-set $workspaceB "B: Work2"
-set $workspaceC "C: Work3"
+set $workspaceA "1:B"
+set $workspaceB "2:B"
+set $workspaceC "3:B"
 
 # switch to workspace
 bindsym $mod1+1 workspace $workspace1
@@ -40,11 +40,10 @@ bindsym $mod1+6 workspace $workspace6
 bindsym $mod1+7 workspace $workspace7
 bindsym $mod1+8 workspace $workspace8
 bindsym $mod1+9 workspace $workspace9
-bindsym $mod1+0 workspace $workspacex
 
-bindsym $mod2+1 workspace $workspaceA
-bindsym $mod2+2 workspace $workspaceB
-bindsym $mod2+3 workspace $workspaceC
+bindsym $mod1+F1 workspace $workspaceA
+bindsym $mod1+F2 workspace $workspaceB
+bindsym $mod1+F3 workspace $workspaceC
 
 # move focused container to workspace
 bindsym $mod1+Shift+1 move container to workspace $workspace1
@@ -56,11 +55,10 @@ bindsym $mod1+Shift+6 move container to workspace $workspace6
 bindsym $mod1+Shift+7 move container to workspace $workspace7
 bindsym $mod1+Shift+8 move container to workspace $workspace8
 bindsym $mod1+Shift+9 move container to workspace $workspace9
-bindsym $mod1+Shift+0 move container to workspace $workspacex
 
-bindsym $mod2+Shift+1 move container to workspace $workspaceA
-bindsym $mod2+Shift+2 move container to workspace $workspaceB
-bindsym $mod2+Shift+3 move container to workspace $workspaceC
+bindsym $mod1+Shift+F1 move container to workspace $workspaceA
+bindsym $mod1+Shift+F2 move container to workspace $workspaceB
+bindsym $mod1+Shift+F3 move container to workspace $workspaceC
 
 #workspace default monitors
 workspace $workspace1 output $screen1
