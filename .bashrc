@@ -1,8 +1,12 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 
+#New Term
+alias urx="urxvt &"
+
 #SERVICES
 alias newnet="sudo systemctl restart NetworkManager"
+alias pi="ping 8.8.8.8"
 
 #EDITING
 alias vrc="vim ~/.vimrc"
@@ -20,7 +24,6 @@ alias r="ranger"
 #CRYPTO
 
 alias geth="geth --syncmode "light" --cache 1024"
-
 
 #MPD
 alias music="ncmpcpp"
