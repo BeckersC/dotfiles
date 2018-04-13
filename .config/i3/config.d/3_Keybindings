@@ -111,6 +111,7 @@ bindsym $mod1+n exec nautilus
 #bindsym $mod1+c exec urxvt -e calcurse
 bindsym $mod1+c exec gnome-calculator
 bindsym $mod1+m exec urxvt -e ncmpcpp
+bindsym $mod1+b exec urxvt -e newsboat
 
 bindsym $mod1+shift+y exec urxvt -e mpsyt
 bindsym $mod1+shift+t exec mpc toggle
