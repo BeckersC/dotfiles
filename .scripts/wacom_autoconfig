@@ -1,0 +1,6 @@
+xsetwacom set "Wacom Intuos5 M Pen stylus" MapToOutput HDMI-4
+#xsetwacom --set "Wacom Intuos5 M Pen stylus" Area 0 0 48000 27000
+
+#16x9 * 3022
+xsetwacom --set "Wacom Intuos5 M Pen stylus" Area 0 0 48352 27198
+
