@@ -14,16 +14,17 @@ vidsites="youtube.com
 	\|hooktube.com
 	\|bitchute.com
     \|vimeo.com
+    \|youtu.be
 	"
 ext="${1##*.}"
 mpvFiles="mkv mp4 gif webm"
 fehFiles="png jpg jpeg jpe"
 wgetFiles="mp3 flac opus mp3?source=feed pdf"
 
-#echo $ext | tee /home/christian/text.txt
-#echo $@ | tee -a /home/christian/text.txt
-#echo $Browser
-#echo $1 | tee -a /home/christian/text.txt
+#echo $ext | tee /home/create4life/text.txt
+#echo $@ | tee -a /home/create4life/text.txt
+#echo $Browser | tee -a /home/create4life/text.txt
+#echo $1 | tee -a /home/create4life/text.txt
 
 
 if echo $fehFiles | grep -w $ext > /dev/null; then
