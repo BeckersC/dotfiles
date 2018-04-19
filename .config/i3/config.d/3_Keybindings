@@ -31,6 +31,7 @@ bindsym $mod1+Shift+j move left
 bindsym $mod1+Shift+k move down
 bindsym $mod1+Shift+l move up
 bindsym $mod1+Shift+odiaeresis move right
+bindsym $mod1++Shift+b floating toggle; sticky toggle; exec --no-startup-id bottomleft
 
 # alternatively, you can use the cursor keys:
 bindsym $mod1+Shift+Left move left
@@ -121,6 +122,9 @@ bindsym $mod1+shift+0 exec mpc seek 0%
 
 #Keybindings
 # Media Keys
+
+bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 5
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute  
 bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute  
 bindsym XF86AudioMute exec amixer -q set Master mute  
