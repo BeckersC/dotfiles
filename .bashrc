@@ -1,9 +1,6 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 
-#New Term
-alias urx="urxvt &"
-
 #SERVICES
 alias newnet="sudo systemctl restart NetworkManager"
 alias pi="ping 8.8.8.8"
@@ -14,12 +11,13 @@ alias brc="vim ~/.bashrc"
 
 #MOVEMENT
 alias mkdir="mkdir -pv"
-alias ls="ls -hN --color=auto --group-directory-first"
 alias cdi3="cd ~/.config/i3/"
 alias cdi3c="cd ~/.config/i3/config.d"
 alias cdi3s="cd ~/.config/i3/scripts"
 alias cdr="cd ~/.config/ranger"
 alias r="ranger"
+
+alias ls="ls -hN --color=auto --group-directory-first"
 
 #CRYPTO
 
@@ -121,7 +119,7 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
+#    alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
