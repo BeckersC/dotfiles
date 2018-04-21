@@ -1,3 +1,5 @@
 #Xrandr
-exec --no-startup-id bash ~/screenlayout.sh
+exec --no-startup-id autoxrandr
+exec --no-startup-id polybar_launch
+exec --no-startup-id compton
 

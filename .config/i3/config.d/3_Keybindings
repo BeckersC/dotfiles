@@ -69,7 +69,10 @@ bindsym $mod1+Shift+r exec ~/.config/i3/scripts/gen.conf.sh ; restart
 bindsym $mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Launch Rofi
-bindsym $mod1+d exec rofi -show run -lines 6 -eh 2 -fullscreen -width 100 -padding 400 -opacity "80" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "Ubuntu Mono 15"
+# bindsym $mod1+d exec rofi -show run -lines 6 -eh 2 -fullscreen -width 100 -padding 400 -opacity "80" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "Ubuntu Mono 15"
+
+# Dmenu
+bindsym $mod1+d exec --no-startup-id dmenu_run
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -123,8 +126,8 @@ bindsym $mod1+shift+0 exec mpc seek 0%
 #Keybindings
 # Media Keys
 
-bindsym XF86MonBrightnessUp exec light -A 5
-bindsym XF86MonBrightnessDown exec light -U 5
+bindsym XF86MonBrightnessUp exec light -A 10
+bindsym XF86MonBrightnessDown exec light -U 10
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute  
 bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute  
 bindsym XF86AudioMute exec amixer -q set Master mute  
