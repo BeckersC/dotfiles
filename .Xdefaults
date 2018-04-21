@@ -4,32 +4,33 @@ Xft*rgba: rgb
 Xft*hinting: true
 Xft*hintstyle: hintslight
 
-URxvt*depth: 24
-!false transparency
-URxvt*transparent:false
-!tramsparency 
-URxvt*shading: 20
-URxvt*inheritPixmap: true
+!urxvt Real transparency
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0200/c800
 
-URxvt*termName:rxvt-256color
-URxvt*borderless: 1
-URxvt*saveLines: 8192
-URxvt*scrollBar: false
+!fake transparency
+!urxvt*transparent:true
+!urxvt*shading:30
+
+urxvt*termName:rxvt-256color
+urxvt*borderless: 1
+urxvt*saveLines: 8192
+urxvt*scrollBar: false
 
 ! do not scroll with output
-URxvt*scrollTtyOutput: false
+urxvt*scrollTtyOutput: false
 
 ! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
-URxvt*scrollWithBuffer: true
+urxvt*scrollWithBuffer: true
 
 ! scroll back to the bottom on keypress
-URxvt*scrollTtyKeypress: true
+urxvt*scrollTtyKeypress: true
 
-URxvt*secondaryScreen: 1
-URxvt*secondaryScroll: 0
+#urxvt*secondaryScreen: 1
+#urxvt*secondaryScroll: 0
 
-URxvt*font: xft:Ubuntu Mono:pixelsize=14
-URxvt*boldFont: xft:Ubuntu Mono
+urxvt*font: xft:Ubuntu Mono:pixelsize=14
+urxvt*boldFont: xft:iosevka Mono
 
-URxvt*letterSpace: -1
-URxvt*color12: rgb:5c/5c/ff
+urxvt*letterSpace: -4
+urxvt*color12: rgb:5c/5c/ff
