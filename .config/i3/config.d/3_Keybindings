@@ -69,7 +69,7 @@ bindsym $mod1+Shift+r exec ~/.config/i3/scripts/gen.conf.sh ; restart
 bindsym $mod+Shift+Escape exec prompt "Are you sure you want to leave i3?" i3-msg exit
 
 # Dmenu
-bindsym $mod1+d exec --no-startup-id dmenu_run
+bindsym $mod1+d exec --no-startup-id dmenu_cache
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
