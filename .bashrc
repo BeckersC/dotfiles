@@ -17,7 +17,7 @@ alias cdi3s="cd ~/.config/i3/scripts"
 alias cdr="cd ~/.config/ranger"
 alias r="ranger"
 
-alias ls="ls -hN --color=auto --group-directory-first"
+alias ls="ls -hN --color=auto
 
 #CRYPTO
 
