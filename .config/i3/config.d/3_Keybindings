@@ -15,10 +15,10 @@ bindsym $mod1+Return exec st
 #bindsym $mod1+Return exec gnome-terminal
 
 # change focus
-bindsym $mod1+j focus left
+bindsym $mod1+h focus left
 bindsym $mod1+k focus down
-bindsym $mod1+l focus up
-bindsym $mod1+o focus right
+bindsym $mod1+j focus up
+bindsym $mod1+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod1+Left focus left
