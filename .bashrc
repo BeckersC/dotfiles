@@ -17,7 +17,7 @@ alias cdi3s="cd ~/.config/i3/scripts"
 alias cdr="cd ~/.config/ranger"
 alias r="ranger"
 
-alias ls="ls -hN --color=auto
+alias ls="ls -hN --color=auto"
 
 #CRYPTO
 
@@ -163,4 +163,3 @@ fi
 set $EDITOR vim 
 set $RTV_BROWSER w3m
 set $RANGER_LOAD_DEFAULT_RC false 
-
