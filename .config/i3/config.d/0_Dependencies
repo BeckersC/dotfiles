@@ -2,18 +2,18 @@
 #
 # i3 or i3-gaps
 #
+# dolphin
+# qt5ct (qtconf)
+# oxygen (qt4 + 5 theme)
 # scrot
 # numlockx
 # convert
 # compton
-# rofi
 # i3block
 # rxvt-unicode-256colors
 # diskie (pip python)
-# pywal
 # polybar
-# qt4config or whatever it is called
-# qt dark theme
+# qt4config 
 # arc kde
 # xcalib
 # xdotool (vim anywhere)
@@ -21,6 +21,7 @@
 # urlview (AUR)
 # light (AUR)
 # ttf-iosevka (AUR)
+# st (suckless)
 
 # #Dependencies for ranger
 #
