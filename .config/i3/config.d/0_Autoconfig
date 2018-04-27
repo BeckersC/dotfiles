@@ -2,5 +2,6 @@
 exec --no-startup-id autoxrandr
 exec --no-startup-id polybar_launch
 exec --no-startup-id compton
-exec --no-startup-id ~/.fehbg
+# moved to 0_Screens
+# exec --no-startup-id bash ~/.fehbg
 

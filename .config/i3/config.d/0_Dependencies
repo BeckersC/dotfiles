@@ -1,3 +1,10 @@
+# Config
+#
+# multithreaded compiling
+# /etc/makepkg.conf
+# MAKEFLAGS="-jx"
+# x = amount of cores in machine + 1 (9 for machine with 8 threads)
+
 # DEPENDENCIES
 #
 # i3 or i3-gaps

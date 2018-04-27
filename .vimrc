@@ -274,4 +274,23 @@ autocmd Filetype markdown map <F5> :!pandoc<space><C-r>%<space>-o<space><C-r>%.p
 map <F6> :setlocal spell! spelling=en_US
 
 
+"MARKDOWN
+  autocmd Filetype markdown,rmd map <leader>w yiWi[<esc>Ea](<esc>pa)
+  autocmd Filetype markdown,rmd inoremap ;n ---<Enter><Enter>
+  autocmd Filetype markdown,rmd inoremap ;b ****<++><Esc>F*hi
+  autocmd Filetype markdown,rmd inoremap ;s ~~~~<++><Esc>F~hi
+  autocmd Filetype markdown,rmd inoremap ;e **<++><Esc>F*i
+  autocmd Filetype markdown,rmd inoremap ;h ====<Space><++><Esc>F=hi
+  autocmd Filetype markdown,rmd inoremap ;i ![](<++>)<++><Esc>F[a
+  autocmd Filetype markdown,rmd inoremap ;a [](<++>)<++><Esc>F[a
+  autocmd Filetype markdown,rmd inoremap ;1 #<Space><Enter><++><Esc>kA
+  autocmd Filetype markdown,rmd inoremap ;2 ##<Space><Enter><++><Esc>kA
+  autocmd Filetype markdown,rmd inoremap ;3 ###<Space><Enter><++><Esc>kA
+  autocmd Filetype markdown,rmd inoremap ;l --------<Enter>
+  autocmd Filetype markdown map <F5> :!pandoc<space><C-r>%<space>--pdf-engine=xelatex<space>-o<space><C-r>%.pdf<Enter><Enter>
+  autocmd Filetype rmd map <F5> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
+  autocmd Filetype rmd inoremap ;r ```{r}<CR>```<CR><CR><esc>2kO
+  autocmd Filetype rmd inoremap ;p ```{python}<CR>```<CR><CR><esc>2kO
 
+
+  autocmd FileType rmd inoremap;v <div<space>style="text-align:center"<space>markdown="1"><space><Esc>o<Tab><video<space>width="<++>"<space>height="<++>"<space>controls><space><Esc>o<source<space>src="<++>"<space>type="video/mp4"><Esc>o</div><Esc><<3k<Esc>
