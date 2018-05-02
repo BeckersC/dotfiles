@@ -34,9 +34,10 @@ Bundle "SuperTab"
 Bundle "file-line"
 Bundle "Align"
 Bundle "junegunn/goyo.vim"
-"Bundle "dylanaraps/wal.vim"
+Bundle "wellle/targets.vim"
 
 "Color
+"Bundle "dylanaraps/wal.vim"
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'gmarik/ingretu'
 Bundle 'Dru89/vim-adventurous'

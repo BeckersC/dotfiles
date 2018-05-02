@@ -8,7 +8,6 @@
 # DEPENDENCIES
 #
 # i3 or i3-gaps
-#
 # dolphin
 # qt5ct (qtconf)
 # oxygen (qt4 + 5 theme)
@@ -29,6 +28,8 @@
 # light (AUR)
 # ttf-iosevka (AUR)
 # st (suckless)
+# nomacs
+# feh
 
 # #Dependencies for ranger
 #

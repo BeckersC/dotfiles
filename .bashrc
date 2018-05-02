@@ -160,6 +160,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export PINENTRY_USER_DATA="USE_CURSES=1"
+export VISUAL=vim
 set $EDITOR vim 
 set $RTV_BROWSER w3m
 set $RANGER_LOAD_DEFAULT_RC false 
