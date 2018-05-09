@@ -217,28 +217,29 @@ autocmd Filetype tex inoremap ;inst {\textsc{inst}}
 """END 
 
 """PHP
-autocmd FileType php,html inoremap ;b <b></b><Space><++><Esc>FbT>i
-autocmd FileType php,html inoremap ;i <em></em><Space><++><Esc>FeT>i
-autocmd FileType php,html inoremap ;h1 <h1></h1><Enter><Enter><++><Esc>2kf<i
-autocmd FileType php,html inoremap ;h2 <h2></h2><Enter><Enter><++><Esc>2kf<i
-autocmd FileType php,html inoremap ;h3 <h3></h3><Enter><Enter><++><Esc>2kf<i
-autocmd FileType php,html inoremap ;p <p></p><Enter><Enter><++><Esc>02kf>a
-autocmd FileType php,html inoremap ;a <a<Space>href=""><++></a><Space><++><Esc>14hi
-autocmd FileType php,html inoremap ;e <a<Space>target="_blank"<Space>href=""><++></a><Space><++><Esc>14hi
-autocmd FileType php,html inoremap ;ul <ul><Enter><li></li><Enter></ul><Enter><Enter><++><Esc>03kf<i
-autocmd FileType php,html inoremap ;li <Esc>o<li></li><Esc>F>a
-autocmd FileType php,html inoremap ;ol <ol><Enter><li></li><Enter></ol><Enter><Enter><++><Esc>03kf<i
-autocmd FileType php,html inoremap ;im <table<Space>class="image"><Enter><caption align="bottom"></caption><Enter><tr><td><a<space>href="pix/<++>"><img<Space>src="pix/<++>"<Space>width="<++>"></a></td></tr><Enter></table><Enter><Enter><++><Esc>4kf>a
-autocmd FileType php,html inoremap ;td <td></td><Enter><++><Esc>kf<i
-autocmd FileType php,html inoremap ;tr <tr></tr><Enter><++><Esc>kf<i
-autocmd FileType php,html inoremap ;th <th></th><Enter><++><Esc>kf<i
-autocmd FileType php,html inoremap ;tab <table><Enter></table><Esc>O
-autocmd FileType php,html inoremap ;gr <font color="green"></font><Esc>F>a
-autocmd FileType php,html inoremap ;rd <font color="red"></font><Esc>F>a
-autocmd FileType php,html inoremap ;yl <font color="yellow"></font><Esc>F>a
-autocmd FileType php,html inoremap ;dt <dt></dt><Enter><dd><++></dd><Enter><++><esc>2kcit
-autocmd FileType php,html inoremap ;dl <dl><Enter><Enter></dl><enter><enter><++><esc>3kcc
-autocmd FileType php,html inoremap ;tag <DELRN><Enter><++><Enter></DELRN><Enter><Enter><++><Esc>4k0fR:MultipleCursorsFind<Space>DELRN<Enter>c
+autocmd FileType html,xhtml,css,php inoremap ;b   <b></b><Space><++><Esc>FbT>i
+autocmd FileType html,xhtml,css,php inoremap ;i   <em></em><Space><++><Esc>FeT>i
+autocmd FileType html,xhtml,css,php inoremap ;h1  <h1><++></h1><Enter><Enter><++><Esc>2kf<Esc>
+autocmd FileType html,xhtml,css,php inoremap ;h2  <h2><++></h2><Enter><Enter><++><Esc>2kf<Esc>
+autocmd FileType html,xhtml,css,php inoremap ;h3  <h3><++></h3><Enter><Enter><++><Esc>2kf<Esc>
+autocmd FileType html,xhtml,css,php inoremap ;p   <p></p><Enter><Enter><++><Esc>02kf>a
+autocmd FileType html,xhtml,css,php inoremap ;a   <a<Space>href=""><++></a><Space><++><Esc>14hi
+autocmd FileType html,xhtml,css,php inoremap ;e   <a<Space>target="_blank"<Space>href=""><++></a><Space><++><Esc>14hi
+autocmd FileType html,xhtml,css,php inoremap ;ul  <ul><Enter><Enter></ul><Enter><Enter><++><Esc>03kf<i
+autocmd FileType html,xhtml,css,php inoremap ;ol  <ol><Enter><Enter></ol><Enter><Enter><++><Esc>03kf<i
+autocmd FileType html,xhtml,css,php inoremap ;li  <Esc>o<li><++></li><enter><enter><++><Esc>2kf<i
+autocmd FileType html,xhtml,css,php inoremap ;im  <table<Space>class="image"><Enter><caption align="bottom"></caption><Enter><tr><td><a<space>href="pix/<++>"><img<Space>src="pix/<++>"<Space>width="<++>"></a></td></tr><Enter></table><Enter><Enter><++><Esc>4kf>a
+autocmd FileType html,xhtml,css,php inoremap ;td  <td></td><Enter><++><Esc>kf<i
+autocmd FileType html,xhtml,css,php inoremap ;tr  <tr></tr><Enter><++><Esc>kf<i
+autocmd FileType html,xhtml,css,php inoremap ;th  <th></th><Enter><++><Esc>kf<i
+autocmd FileType html,xhtml,css,php inoremap ;tab <table><Enter></table><Esc>O
+autocmd FileType html,xhtml,css,php inoremap ;gr  <font color="green"></font><Esc>F>a
+autocmd FileType html,xhtml,css,php inoremap ;rd  <font color="red"></font><Esc>F>a
+autocmd FileType html,xhtml,css,php inoremap ;yl  <font color="yellow"></font><Esc>F>a
+autocmd FileType html,xhtml,css,php inoremap ;dt  <dt></dt><Enter><dd><++></dd><Enter><++><esc>2kcit
+autocmd FileType html,xhtml,css,php inoremap ;dl  <dl><Enter><Enter></dl><enter><enter><++><esc>3kcc
+autocmd FileType html,xhtml,css,php inoremap ;tag <DELRN><Enter><++><Enter></DELRN><Enter><Enter><++><Esc>4k0fR:MultipleCursorsFind<Space>DELRN<Enter>c
+autocmd FileType html,xhtml,css,php inoremap ;div <div><Esc>o<++><Esc>o</div><Esc>o<++><Esc>k<Space><Space>
 """ END
 
 let g:instant_markdown_autostart = 0

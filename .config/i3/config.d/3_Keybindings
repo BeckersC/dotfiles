@@ -104,15 +104,15 @@ bindsym --release Print exec "scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mv $f ~/p
 
 #mod1 
 
-bindsym $mod1+y exec urxvt -e htop
-bindsym $mod1+r exec urxvt -e ranger
+bindsym $mod1+y exec st -e htop
+bindsym $mod1+r exec st -e ranger
 bindsym $mod1+n exec dolphin
 #bindsym $mod1+c exec urxvt -e calcurse
 bindsym $mod1+c exec gnome-calculator
-bindsym $mod1+m exec urxvt -e ncmpcpp
-bindsym $mod1+b exec urxvt -e newsboat
+bindsym $mod1+m exec st -e ncmpcpp
+bindsym $mod1+b exec st -e newsboat
 
-bindsym $mod1+shift+y exec urxvt -e mpsyt
+bindsym $mod1+shift+y exec st -e mpsyt
 bindsym $mod1+shift+t exec mpc toggle
 bindsym $mod1+shift+n exec mpc next
 bindsym $mod1+shift+p exec mpc prev
