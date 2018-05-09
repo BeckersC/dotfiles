@@ -1,3 +1,0 @@
-
-# exec --no-startup-id "sh -c 'dispwin -d 1 -I ~/calibration/linux/LG_1.icc'"
-exec --no-startup-id "sh -c 'xcalib -d :0 ~/calibration/linux/LG_1.icc'"
