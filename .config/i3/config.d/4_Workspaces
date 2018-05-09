@@ -89,7 +89,6 @@ assign [class="Firefox"] $workspace4
 
 #Autostart
 exec --no-startup-id "sh -c 'sleep 2; exec discord'"
-exec --no-startup-id "sh -c 'sleep 2; exec slack'"
 exec --no-startup-id "sh -c 'sleep 2; vivaldi-stable'"
 exec --no-startup-id mpd
 
