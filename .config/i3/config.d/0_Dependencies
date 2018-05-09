@@ -7,6 +7,7 @@
 
 # DEPENDENCIES
 #
+# gnome-vim
 # i3 or i3-gaps
 # dolphin
 # qt5ct (qtconf)
@@ -35,4 +36,3 @@
 #
 #w3m w3m-img
 #atool
-#
