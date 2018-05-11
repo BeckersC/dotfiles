@@ -14,7 +14,6 @@
 #         }
 #}
 
-
 # Define workspaces
 set $workspace1 "1:A"
 set $workspace2 "2:A"
@@ -93,14 +92,10 @@ exec --no-startup-id "sh -c 'sleep 2; vivaldi-stable'"
 exec --no-startup-id mpd
 
 # Daemon
-exec --no-startup-id calcurse --daemon
 exec --no-startup-id udiskie
 
 # Numlock
 exec_always --no-startup-id numlockx on 
-
-# Pywall restore theme
-exec_always --no-startup-id wal -R
 
 #polybar
 exec_always --no-startup-id "sh -c 'sleep 1; exec bash ~/.config/polybar/launch.sh &'" 

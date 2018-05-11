@@ -1,3 +1,3 @@
-set $screen1 HDMI-A-1
-set $screen2 DVI-D-0
+set $screen1
+set $screen2 screen
 

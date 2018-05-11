@@ -2,6 +2,15 @@
 set $mod1 Mod4
 #set $mod2 Mod4
 
+
+# Disable all commands for remote sessuions
+mode "pass-through" {
+    bindsym $mod+p mode "default"
+}
+bindsym $mod+p mode "pass-through"
+
+
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod1
 
