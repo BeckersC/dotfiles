@@ -7,7 +7,6 @@ URxvt*scrollWithBuffer: true
 ! scroll back to the bottom on keypress
 URxvt*scrollTtyKeypress: true)
 
-
 URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
 
@@ -21,11 +20,6 @@ vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <ESC>"+pa
 
-
-
-
-)
-
  Font config
 Xft.dpi: 96
 Xft.autohint:0 Xft.lcdfilter: lcddefault 
@@ -35,3 +29,34 @@ Xft.anitalias: 1
 Xft.rgba: rgb
 
 
+!! black dark/light
+*color0:                #073642
+*color8:                #002b36
+
+!! red dark/light
+*color1:                #dc322f
+*color9:                #cb4b16
+
+!! green dark/light
+*color2:                #859900
+*color10:               #586e75
+
+!! yellow dark/light
+*color3:                #b58900
+*color11:               #657b83
+
+!! blue dark/light
+*color4:                #268bd2
+*color12:               #839496
+
+!! magenta dark/light
+*color5:                #d33682
+*color13:               #6c71c4
+
+!! cyan dark/light
+*color6:                #2aa198
+*color14:               #93a1a1
+
+!! white dark/light
+*color7:                #eee8d5
+*color15:               #fdf6e3

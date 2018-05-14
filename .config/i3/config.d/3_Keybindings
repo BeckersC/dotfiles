@@ -5,9 +5,9 @@ set $mod1 Mod4
 
 # Disable all commands for remote sessuions
 mode "pass-through" {
-    bindsym $mod+p mode "default"
+    bindsym $mod1+p mode "default"
 }
-bindsym $mod+p mode "pass-through"
+bindsym $mod1+p mode "pass-through"
 
 
 
