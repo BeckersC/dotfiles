@@ -1,6 +1,21 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 
+if [ -x /bin/cowsay -a -x /bin/fortune ]; then
+    fortune -n 80| cowsay
+fi
+
+ranger() {
+    if [ -z "$RANGER_LEVEL" ]; then
+        /usr/bin/ranger "$@"
+    else
+        exit
+    fi
+}
+
+
+
+
 #SERVICES
 alias newnet="sudo systemctl restart NetworkManager"
 alias pi="ping 8.8.8.8"
