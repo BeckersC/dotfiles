@@ -2,7 +2,7 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 
 if [ -x /bin/cowsay -a -x /bin/fortune ]; then
-    fortune -n 80| cowsay
+    fortune -n 25| cowsay
 fi
 
 ranger() {
