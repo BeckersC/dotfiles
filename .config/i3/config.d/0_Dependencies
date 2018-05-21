@@ -32,7 +32,18 @@
 # nomacs
 # feh
 
+# R 
+# #### for R
+# tcl
+# tk
+
 # #Dependencies for ranger
 #
 #w3m w3m-img
 #atool
+#
+#
+# Dependencies within R
+#
+# mindr
+# rmarkdown
