@@ -13,16 +13,18 @@ ranger() {
     fi
 }
 
-
-
+#neovim
+alias v="/bin/nvim"
+alias vi="/bin/nvim"
+alias vim="/bin/nvim"
 
 #SERVICES
 alias newnet="sudo systemctl restart NetworkManager"
 alias pi="ping 8.8.8.8"
 
 #EDITING
-alias vrc="vim ~/.vimrc"
-alias brc="vim ~/.bashrc"
+alias vrc="nvim ~/.config/nvim/init.vim"
+alias brc="nvim ~/.bashrc"
 
 #MOVEMENT
 alias mkdir="mkdir -pv"
@@ -176,7 +178,7 @@ if ! shopt -oq posix; then
 fi
 
 export PINENTRY_USER_DATA="USE_CURSES=1"
-export VISUAL=vim
-set $EDITOR vim 
+export VISUAL=nvim
+set $EDITOR nvim 
 set $RTV_BROWSER w3m
 set $RANGER_LOAD_DEFAULT_RC false 
