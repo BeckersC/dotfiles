@@ -1,7 +1,12 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'https://github.com/tpope/vim-surround'
 Plug 'morhetz/gruvbox'
-Plug 'https://github.com/vim-syntastic/syntastic.git'
+Plug 'scrooloose/syntastic'
+Plug 'junegunn/goyo.vim'
+Plug 'valloric/youcompleteme'
+Plug 'scrooloose/syntastic'
+Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
 
